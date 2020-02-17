@@ -1,100 +1,148 @@
+<!DOCTYPE html>
 <html>
-  <head>
-  <title>Burton school</title>
-    <style>
+<head>
+  <link rel="stylesheet" href="Burton.ccs"
+  <meta charset="utf-8">
+  <title>Burton education</title>
+  <style>
 
-    <style>
+  * {
+    box-sizing:border-box;
+  }
 
-    image {
-      display: inline;
-      float: left;
-      width: 30%;
-    }
+  div#wrapper, footer {
+    margin:auto;
+    width:1000px;
+    background-color:rgb(251,235,235);
+    padding:20px;
+  }
 
-    images {
-      display: inline;
-      float: right;
-      width: 59%;
-    }
+  body {
+    font-family:"arial", "sans serif";
+  }
 
-    image {
-      padding: 10px;
-    }
+  nav {
+    margin-top:20px;
+    margin-bottom:20px;
+  }
 
-    article {
-      display:inline-block;
-      width:33%;
-      padding-right: 10px;
-    }
+  nav a {
+    margin-right:20px;
+  }
 
-    article:last-child {
-      padding-right:0px;
-    }
-    </style>
+  section.appel, section.visuals {
+    width:50%;
+    float:left;
+  }
 
-    </style>
-  </head>
-      <body bgcolor="#FCEBEB">
-          <img src="burton_logo.png" alt="burton_logo.png">
-          <p>
-            <a href="https://pbs.twimg.com/media/EKioCE_WkAEgqlA?format=jpg&name=900x900">Nieuws</a>
-            <a href="https://pbs.twimg.com/media/EKYwrm3XsAAHTNE?format=jpg&name=900x900">producten</a>
-            <a href="https://i.redd.it/hi9qekone5241.jpg">contact</a>
-            <a href="login.html">Form</a>
-            <p>
-              <image>
-                <img src="appel.jpg" alt="appel.jpg">
-              </image>
-              <images>
-                <img src="bus.jpg">
-                <img src="desk.jpg">
-                <img src="pythagoras.jpg">
-              </images>
-              <p>
-                <headline>
-              <h1>donec eleifend eget sem vitea mattis</h1>
-            </headline>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.
-              nullam ultricies, lorem eget feugiat
-              Tincidunt, ex urna vestibulum felis, eu
-              gravida est libero non mauris.
-            curabitur non ex dui. maecenas
-            scelerisque vestibulum neque id
-            malesuada. etiam arcu ipsum, porttitor at
-            imperdiet hendrerit, placerat ac neque.
-            integer pretium bibendum urna id
-            malesuada. vivamus dui odio, cursus at
-            vulputate vitae, semper non ex.
-            suspendisse ultricies arcu sit amet massa
-            lacinia dignissim. duis ac diam bibendum,
-            placerat tellus vel, imperdiet justo etiam at
-            pellentesque mi. nullam faucibus nulla
+  section.visuals {
+    text-align:right;
+  }
 
-            Donec a tincidunt enim. aliquam erat
-            volutpat. suspendisse laoreet sodales
-            sem, sed fringilla enim mollis a. integer sed
-            elit ut odio tristique congue non a nunc.
+  img.appel {
+    width:497px;
+  }
 
-            in porttitor metus quis enim vestibulum
-            suscipit vitae sed nulla. maecenas pulvinar.
-            ut libero nec faucibus duis a rutrum dui.
-            Nullam ultricies, lorem egat feugiat
-            tincidunt, ex urna vestibulum fellis, eu
-            gravida est liberto non mauris
+  img.visual {
+    width:447px;
+    margin-bottom:13px;
+  }
 
-            carabitur non ex dui. maecenas
-            scelerisque vestibulum neque id
-            malesuada. Etiam arcu ipsum, portitor at
-            imperdiet hendrerit, placerat ac neque.
-            integer pretium bibendum uma id
-            malesuada. vivamus dui odio, cursus at
-            vulputate vitae, semper non ex.
-            suspendisse ultricies arcu sit amet massa
-            lacinia dignissim. Duic ac diam bibendum,
-            placerat tellus vel, imperdiet justo. etiam at
-            pellentesque mi. Nullam faucibus nulla
+  img.article {
+    margin-top:20px;
+    margin-bottom:20px;
+  }
 
-      </body>
-  </html>
+  article {
+    display:inline-block;
+    width:30%;
+    padding-right:10px;
+    vertical-align:top;
+  }
+
+  article:last-child {
+    padding-right:0px;
+  }
+
+  footer {
+    background-color:rgb(166,166,166);
+    color:white;
+  }
+
+  footer a {
+    color:white;
+  }
+
+  </style>
+</head>
+<body>
+
+<div id="wrapper">
+  <header>
+    <img src="burton_logo.png" alt="logo van burton" width="300" height="40">
+  </header>
+  <nav>
+    <a href="https://pbs.twimg.com/media/EKioCE_WkAEgqlA?format=jpg&name=900x900">Over ons</a>
+    <a href="https://pbs.twimg.com/media/EKYwrm3XsAAHTNE?format=jpg&name=900x900">producten</a>
+    <a href="https://i.redd.it/hi9qekone5241.jpg">contact</a>
+    <a href="login.html">Form</a>
+  </nav>
+  <section class="appel">
+    <img class="appel" src="appel.jpg" alt="appel">
+  </section>
+  <section class="visuals">
+    <img class="visual" src="bus.jpg" alt="bus">
+    <img class="visual" src="desk.jpg" alt="klok">
+    <img class="visual" src="pythagoras.jpg" alt="Schoolbord">
+  </section>
+  <section class="artikelen">
+    <h1>donec eleifend eget sem vitea mattis</h1>
+    <article>
+      Phasellus aliquam tempus quam, et ultricies nunc. Integer et velit magna.
+      Nam eget ligula non urna dictum aliquam. Curabitur nec consectetur risus.
+      Vivamus euismod odio ac ipsum accumsan aliquam.
+      Sed vel velit a est gravida efficitur sit amet non elit.
+      Cras et odio non felis tincidunt ultrices ac vel lectus.
+      Vivamus quam sapien, fermentum ut maximus consectetur,
+      tempor sed sapien. Suspendisse ut ante et metus cursus convallis.
+      Nullam ipsum nisl, ornare nec purus vel, fringilla pellentesque mauris.
+      Pellentesque in erat gravida, rhoncus leo ut, porttitor velit.
+      Duis ornare elementum tortor, in consectetur leo accumsan non.
+      Ut tempor, urna ac tincidunt ornare, massa velit vulputate ligula,
+      et condimentum nulla odio et urna. Vestibulum euismod dolor diam,
+      id scelerisque mauris feugiat eu.
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+      </acticle>
+      <article>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Morbi tempus quis augue id maximus. Nunc tincidunt et urna quis condimentum.
+      Nulla non blandit arcu. In egestas feugiat dolor eget suscipit. Duis a lectus euismod,
+      facilisis metus ut, vulputate sem. In ipsum felis, aliquam blandit tempor sit amet,
+      <img src="football.jpg" alt="football">
+      consectetur in nulla. Cras ut vehicula eros. Vestibulum gravida aliquam consectetur.
+      Praesent eget scelerisque nisi. Nam consectetur tellus eleifend risus bibendum sollicitudin.
+      Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </acticle>
+      <article>
+      Donec gravida quam id suscipit consectetur.
+      Duis ornare magna nec dictum tempus. Nullam mauris leo,
+      porttitor quis bibendum vitae, placerat vel elit. Sed a imperdiet lectus,
+      eget ultricies mauris. Praesent vestibulum turpis in lacus hendrerit aliquet.
+      Vestibulum pharetra, lacus a varius elementum, orci quam malesuada risus,
+      eget molestie neque arcu nec libero. Donec ut pulvinar dui.
+      Mauris placerat interdum tellus id tristique. Ut erat nunc, mollis a felis vel,
+      tempus finibus turpis. Orci varius natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus. Fusce elementum erat et porta pulvinar.
+      <img src="book.jpg" alt="book">
+      </acticle>
+  </section>
+  <footer>
+    <a href="https://pbs.twimg.com/media/EKioCE_WkAEgqlA?format=jpg&name=900x900">Over ons</a> <br>
+    <a href="https://pbs.twimg.com/media/EKYwrm3XsAAHTNE?format=jpg&name=900x900">producten</a> <br>
+    <a href="https://i.redd.it/hi9qekone5241.jpg">contact</a><br><br>
+    Copyright &copy 2016
+    </footer>
+</div><!-- wrapper -->
+</body>
+</html>
