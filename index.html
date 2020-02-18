@@ -48,21 +48,30 @@
     margin-bottom:13px;
   }
 
-  img.article {
+  img.div {
     margin-top:20px;
     margin-bottom:20px;
   }
 
-  article {
-    display:inline-block;
-    width:30%;
-    padding-right:10px;
-    vertical-align:top;
+  div.column {
+    float:left;
+    padding-right:10px
   }
 
-  article:last-child {
-    padding-right:0px;
+  div.left, div.right {
+    width:33%;
   }
+
+  div.middle {
+    width:33%;
+    padding-right:10px;
+  }
+
+  .artikelen:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
   footer {
     background-color:rgb(166,166,166);
@@ -85,7 +94,6 @@
     <a href="https://pbs.twimg.com/media/EKioCE_WkAEgqlA?format=jpg&name=900x900">Over ons</a>
     <a href="https://pbs.twimg.com/media/EKYwrm3XsAAHTNE?format=jpg&name=900x900">producten</a>
     <a href="https://i.redd.it/hi9qekone5241.jpg">contact</a>
-    <a href="login.html">Form</a>
   </nav>
   <section class="appel">
     <img class="appel" src="appel.jpg" alt="appel">
@@ -97,8 +105,8 @@
   </section>
   <section class="artikelen">
     <h1>donec eleifend eget sem vitea mattis</h1>
-    <article>
-      Phasellus aliquam tempus quam, et ultricies nunc. Integer et velit magna.
+    <div class="column left">
+      <p>Phasellus aliquam tempus quam, et ultricies nunc. Integer et velit magna.
       Nam eget ligula non urna dictum aliquam. Curabitur nec consectetur risus.
       Vivamus euismod odio ac ipsum accumsan aliquam.
       Sed vel velit a est gravida efficitur sit amet non elit.
@@ -112,20 +120,20 @@
       et condimentum nulla odio et urna. Vestibulum euismod dolor diam,
       id scelerisque mauris feugiat eu.
       Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      </acticle>
-      <article>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+    </div>
+      <div class="column middle">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Morbi tempus quis augue id maximus. Nunc tincidunt et urna quis condimentum.
       Nulla non blandit arcu. In egestas feugiat dolor eget suscipit. Duis a lectus euismod,
-      facilisis metus ut, vulputate sem. In ipsum felis, aliquam blandit tempor sit amet,
       <img src="football.jpg" alt="football">
+      facilisis metus ut, vulputate sem. In ipsum felis, aliquam blandit tempor sit amet,
       consectetur in nulla. Cras ut vehicula eros. Vestibulum gravida aliquam consectetur.
       Praesent eget scelerisque nisi. Nam consectetur tellus eleifend risus bibendum sollicitudin.
-      Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      </acticle>
-      <article>
-      Donec gravida quam id suscipit consectetur.
+      Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      </div>
+      <div class="column right">
+    <p>Donec gravida quam id suscipit consectetur.
       Duis ornare magna nec dictum tempus. Nullam mauris leo,
       porttitor quis bibendum vitae, placerat vel elit. Sed a imperdiet lectus,
       eget ultricies mauris. Praesent vestibulum turpis in lacus hendrerit aliquet.
@@ -134,8 +142,8 @@
       Mauris placerat interdum tellus id tristique. Ut erat nunc, mollis a felis vel,
       tempus finibus turpis. Orci varius natoque penatibus et magnis dis parturient montes,
       nascetur ridiculus mus. Fusce elementum erat et porta pulvinar.
-      <img src="book.jpg" alt="book">
-      </acticle>
+      <img src="book.jpg" alt="study"></p>
+      </div>
   </section>
   <footer>
     <a href="https://pbs.twimg.com/media/EKioCE_WkAEgqlA?format=jpg&name=900x900">Over ons</a> <br>
